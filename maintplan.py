@@ -38,7 +38,24 @@ proface = {
 	'QL_CTR': 		{'IP' :'10.210.202.77', 'type': 'CTR'},
 	'QL_MAIN_02':	{'IP' :'10.210.202.78', 'type': 'WD'},
 	'QL_MAIN_03':	{'IP' :'10.210.202.79', 'type': 'WDLT'},
-	'KAPPA_WCC':	{'IP' :'10.210.202.80', 'type': 'ST'}
+	'KAPPA_WCC':	{'IP' :'10.210.202.80', 'type': 'ST'},
+	'LNT_02_02': 	{'IP' :'10.210.202.81', 'type': 'WD1'},
+	'LNT_02_03': 	{'IP' :'10.210.202.82', 'type': 'WD1'},
+	'LNT_02_04': 	{'IP' :'10.210.202.83', 'type': 'WD1'},
+	'LNT_02_05': 	{'IP' :'10.210.202.84', 'type': 'LT'},
+	'LNT_02_06': 	{'IP' :'10.210.202.85', 'type': 'WD'},
+	'LNT_02_07': 	{'IP' :'10.210.202.86', 'type': 'SP'},
+	#'LNT_02_08': 	{'IP' :'10.210.202.87', 'type': 'PR'},#CLINCHING
+	'LNT_02_09': 	{'IP' :'10.210.202.88', 'type': 'SP'},
+	'LNT_02_10': 	{'IP' :'10.210.202.89', 'type': 'SP1'},
+	'LNT_02_11': 	{'IP' :'10.210.202.90', 'type': 'BO'},
+	'LNT_02_12': 	{'IP' :'10.210.202.91', 'type': 'LT'},
+	'KAPPA_GAMMA_02': 	{'IP' :'10.210.202.180', 'type': 'WD1'},
+	'KAPPA_GAMMA_03': 	{'IP' :'10.210.202.181', 'type': 'WD1'},
+	'KAPPA_GAMMA_04': 	{'IP' :'10.210.202.182', 'type': 'LT'},
+	'KAPPA_GAMMA_05': 	{'IP' :'10.210.202.183', 'type': 'WD1'},
+	'KAPPA_GAMMA_06': 	{'IP' :'10.210.202.184', 'type': 'LT'}
+	
 			
 }
 
@@ -46,109 +63,109 @@ requestPoziadavka = {
 		"WD": 	{0 : {1:'Nastavenie dráhy zvaru',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				2 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Nastavenie kamery',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				6 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'}				
 				},
 				
 		"WD1": 	{0 : {1:'Nastavenie dráhy zvaru',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				2 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'1. STOP - nevyrába sa'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Nastavenie kamery',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				6 : {1:'Porucha dopravníka',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				6 : {1:'Porucha dopravníka',		2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'}				
 				},	
 				
 		"BO": 	{0 : {1:'Chyba uťahovania',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				2 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Nastavenie kamery',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				6 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'}				
 				},
 				
 		"LT": 	{0 : {1:'Výmena tesnenia',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				2 : {1:'Porucha lasera',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				2 : {1:'Porucha lasera',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Nastavenie kamery',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				6 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha INKJET tlačiarne',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha INKJET tlačiarne',	2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'}				
 				},
 				
 		"SP": 	{0 : {1:'Nastavenie bodového zvaru',2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				2 : {1:'Výmena bodovacieho hrotu',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Chyba chladenia',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				6 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'}				
 				},
 		"SP1": 	{0 : {1:'Nastavenie bodového zvaru',2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				2 : {1:'Výmena bodovacieho hrotu',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Chyba chladenia',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				6 : {1:'Porucha lasera',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				6 : {1:'Porucha lasera',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'}				
 				},
 		"ST": 	{0 : {1:'Nastavenie bodového zvaru',2: 'V prevádzke',	3:'2. Obmedzenie výroby'}, #KAPPA STUFFING
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				2 : {1:'Výmena bodovacieho hrotu',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Nastavenie kamery',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				6 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha serva',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha serva',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				11 : {1:'Nastavenie dráhy zvaru',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'}, #KAPPA WELD 1
 				12 : {1:'Nastavenie stroja',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				13 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				14 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				15 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				14 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				15 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				16 : {1:'Nastavenie kamery',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				17 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				18 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				18 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				19 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				21 : {1:'Nastavenie dráhy zvaru',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'}, #KAPPA WELD 2
 				22 : {1:'Nastavenie stroja',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				23 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				24 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				25 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				24 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				25 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				26 : {1:'Nastavenie kamery',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				27 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				28 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				28 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				29 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'}				
 				},
 		"WDLT": {0 : {1:'Nastavenie dráhy zvaru',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'}, #MAIN 03 WE
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				2 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Nastavenie kamery',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				6 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha robota',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				11 : {1:'Výmena tesnenia',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'}, #MAIN 04 LT
 				12 : {1:'Nastavenie stroja',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				13 : {1:'Porucha lasera',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				14 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				15 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				13 : {1:'Porucha lasera',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				14 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				15 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				16 : {1:'Nastavenie kamery',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				17 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				18 : {1:'Porucha INKJET tlačiarne',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
@@ -157,29 +174,29 @@ requestPoziadavka = {
 		"CTR": 	{0 : {1:'Nastavenie dráhy zvaru',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'}, #CTR WELD
 				1 : {1:'Nastavenie stroja',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				2 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				3 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				4 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				3 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				4 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				5 : {1:'Nastavenie kamery',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				6 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				7 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				7 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				8 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				11 : {1:'Nastavenie dráhy zvaru',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'}, #CTR BOLTING
 				12 : {1:'Nastavenie stroja',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				13 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				14 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				15 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				14 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				15 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				16 : {1:'Nastavenie kamery',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				17 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				18 : {1:'Porucha robota',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				18 : {1:'Porucha robota',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				19 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				21 : {1:'Výmena tesnenia',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'}, #CTR LT
 				22 : {1:'Nastavenie stroja',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				23 : {1:'Zalepená zváracia špička',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				24 : {1:'Iná porucha',				2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				25 : {1:'Porucha snímača',			2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				24 : {1:'Iná porucha',				2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
+				25 : {1:'Porucha snímača',			2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				26 : {1:'Nastavenie kamery',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
 				27 : {1:'Preventívna údržba',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
-				28 : {1:'Porucha INKJET tlačiarne',	2: 'V prevádzke',	3:'2. Obmedzenie výroby'},
+				28 : {1:'Porucha INKJET tlačiarne',	2: '!!! Mimo prevádzky !!!',	3:'2. Obmedzenie výroby'},
 				29 : {1:'Núdzové zastavenie',		2: 'V prevádzke',	3:'2. Obmedzenie výroby'}				
 				}		
 }
@@ -232,52 +249,34 @@ def get_proface_reset_word(status):
 		loop = loop +1
 
 def getMP_kod_poruchy():
-	try:
-		mp_database = mysql.connector.connect (host="10.210.200.41",user="sejong_cli",passwd="s3j0ng!",database="mp3_sejong")
-		mycursor = mp_database.cursor()
-		mycursor.execute("SELECT IDERCD,FSERNM FROM TDERCD_VIEW where FBDELE=0 GROUP BY FSERNM")
-		myresult = mycursor.fetchall()
+
+	mp_database = mysql.connector.connect (host="10.210.200.41",user="sejong_cli",passwd="s3j0ng!",database="mp3_sejong")
+	mycursor = mp_database.cursor()
+	mycursor.execute("SELECT IDERCD,FSERNM FROM TDERCD_VIEW where FBDELE=0 GROUP BY FSERNM")
+	myresult = mycursor.fetchall()
 		
-	except:
-		#mp_database.close()
-		return 'ERROR CONNECT'
-		
-	if (getDebugLevel() == 3):
-		print_list(myresult)
-		
+
 	mp_database.close()
 	return myresult
 	
 def getMP_stav_zariadenia():
-	try:
-		mp_database = mysql.connector.connect (host="10.210.200.41",user="sejong_cli",passwd="s3j0ng!",database="mp3_sejong")
-		mycursor = mp_database.cursor()
-		mycursor.execute("SELECT IDTMOV,FSTMOV FROM TSTMOV_VIEW  where FBDELE=0")
-		myresult = mycursor.fetchall()
+
+	mp_database = mysql.connector.connect (host="10.210.200.41",user="sejong_cli",passwd="s3j0ng!",database="mp3_sejong")
+	mycursor = mp_database.cursor()
+	mycursor.execute("SELECT IDTMOV,FSTMOV FROM TSTMOV_VIEW  where FBDELE=0")
+	myresult = mycursor.fetchall()
 		
-	except:
-		#mp_database.close()
-		return 'ERROR CONNECT'
-		
-	if (getDebugLevel() == 3):
-		print_list(myresult)
-		
+
 	mp_database.close()
 	return myresult
 	
 def getMP_priorita():
-	try:
-		mp_database = mysql.connector.connect (host="10.210.200.41",user="sejong_cli",passwd="s3j0ng!",database="mp3_sejong")
-		mycursor = mp_database.cursor()
-		mycursor.execute("SELECT IDSAPR, FSSAPR FROM TSSAPR_VIEW where FBDELE=0")
-		myresult = mycursor.fetchall()
-		
-	except:
-		#mp_database.close()
-		return 'ERROR CONNECT'
-		
-	if (getDebugLevel() == 3):
-		print_list(myresult)
+
+	mp_database = mysql.connector.connect (host="10.210.200.41",user="sejong_cli",passwd="s3j0ng!",database="mp3_sejong")
+	mycursor = mp_database.cursor()
+	mycursor.execute("SELECT IDSAPR, FSSAPR FROM TSSAPR_VIEW where FBDELE=0")
+	myresult = mycursor.fetchall()
+
 		
 	mp_database.close()
 	return myresult
@@ -406,7 +405,8 @@ def magic():
 def main():
 	
 	while(True):
-		time.sleep(1)	# DEBUG !!
+		#time.sleep(1)	# DEBUG !!
 		magic()
+		print ("ok ",get_time())
 if __name__ == '__main__':
 	main()
